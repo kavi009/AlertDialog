@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+
+
+    <TextView
+        android:id="@+id/dialog_titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Delete..."
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="start"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/imaag"
+        android:layout_toRightOf="@+id/imaag"
+        android:layout_toEndOf="@+id/imaag">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imaag"
+        android:background="@drawable/del"
+        />
+
+    <TextView
+        android:id="@+id/dialog_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete this?"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_below="@id/dialog_titile"
+        />
+    <Button
+        android:id="@+id/dialog_positive_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_below="@id/dialog_titile"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/dialog_negative_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:layout_toLeftOf="@id/dialog_positive_btn"
+        android:layout_alignBaseline="@id/dialog_positive_btn"
+        />
+</RelativeLayout>
+
